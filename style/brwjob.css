@@ -48,7 +48,7 @@ p:hover, p:focus { animation-duration: 1s;
 }
 
 .brwjobtext2 {
-    background: black;
+    background: orange;
     padding: 2rem;
     margin-top: 1%;
     text-align: center;
@@ -110,7 +110,7 @@ p:hover, p:focus { animation-duration: 1s;
   
   @keyframes flashText {
     to {
-      opacity: 0.2;
+      opacity: 0.8;
     }
   }
   
