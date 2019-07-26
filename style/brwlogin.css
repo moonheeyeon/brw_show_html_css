@@ -1,7 +1,7 @@
 html {
     background-color: orange;
     padding-right: 500px;
-    padding-left:700px;
+    padding-left:550px;
 }
 
 a {
@@ -19,7 +19,7 @@ body {
 }
 
 form {
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .btn-secondary {
