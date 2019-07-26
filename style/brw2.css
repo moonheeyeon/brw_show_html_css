@@ -138,7 +138,6 @@ h1 {
     color: orange;
     line-height: 75px;
     float: left;
-    line-height: 75px;
     font-family: 'Do Hyeon', sans-serif;
     font-size: 50px;
 }
@@ -225,7 +224,7 @@ h1 {
   .foot2 {
     text-align: center;
     padding-bottom: 1%;
-    padding-top: 2%;
+    padding-top: 1%;
     color: white;
     font-family: 'Jua', sans-serif;
     font-size: 90%;
