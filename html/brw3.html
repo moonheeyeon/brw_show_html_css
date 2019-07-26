@@ -1,100 +1,396 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta content="text/html; charset=euc-kr">
-<title>던진다</title>
-<style type="text/css">
-    body {
-        text-align: center;
-        color: #FFF;
-        width: 99%;
-    }
-    div#wapper {
-        width: 100%;
-        text-align: left;
-        min-height: 100%;
-        margin: 20px auto;
-    }
-    header{
-        border: 1px solid #999;
-        margin: 5px;
-        padding: 10px;
-        height: 100px;
-        background-color: red;
-    }
-    .brw3btn {
-        position: relative;
-        margin: 459px 417px 0px 417px;
-        padding: 120px 120px 0px 120px;
-        display: inline-block;
-    }
-
-    .brw3st {
-        background: url('../img/brw3.jpg');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        text-align: center;
-        float: left;
-        border: 1px solid #999;
-        margin: 5px;
-        padding: 0px 0px 0px 0px;
-        position: relative;
-        display: inline-block;
-    }
-    .brw3nv {
-        margin: 5px;
-        padding: 0px 0px 602px 320px;
-        border: 1px solid #999;
-        float: left;
-        background-color: goldenrod;
-        background: url('../img/brw4.jpg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    .brw3foot {
-        margin: 5px;
-        padding: 700px 0px 0px 132px;
-        border: 1px solid #999;
-        background-color: blue;
-        position: relative;
-        clear: both;
-    }
-</style>
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css">
+    <link rel="stylesheet" href="../style/brw3.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Jua|Sunflower:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div id="wapper">
-        <!--헤더시작-->
-        <header>
-            <p>header</p>
-        </header>
-        <!--네비게이션-->
-        <nav class="brw3nv">
+<body class='dev'>
+    <header>
+        <nav class='fixed-top'>
+            <p>HEADER</p>
         </nav>
-        <!--콘텐츠부분-->
-        <section class="brw3st">
-            <div class="brw3btn">
-            <button class="brw3btn1">연극</button>
-            <button class="brw3btn1">전시</button>
-            <button class="brw3btn1">음악</button>
-            <button class="brw3btn1">운동</button>
-            <button class="brw3btn1">기타</button>
+    </header>
+    <div class="index">
+        <div class="container mt-5">
+            <div class="row pb-5">
+                <div class="col-4">
+                    <div class="sidemenu">
+                        <div class="banner">
+                            <div class="banner-wrapper">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide bg-success">
+                                            배너 1
+                                        </div>
+                                        <div class="swiper-slide bg-warning">
+                                            배너 2
+                                        </div>
+                                        <div class="swiper-slide bg-danger">
+                                            배너 3
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="banner-pagination">
+                                    <div class="row align-items-center">
+                                        <div class="col-3">
+                                            <div class="banner-btn-left text-center">
+                                                <span class=''>왼쪽</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="banner-pagination-bullets text-center"></div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="banner-btn-right text-center">
+                                                <span class=''>오른쪽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="focus-event-tabs">
+                            <div class="tabs">
+                                <nav class='container'>
+                                    <div class="nav nav-tabs row" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active col-6 text-center" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">인기있는</a>
+                                        <a class="nav-item nav-link col-6 text-center" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">새로등록된</a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="content">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4 event-holder p-3">
+                                            <div class="event-image">
+                                                행사
+                                            </div>
+                                        </div>
+                                        <div class="col-4 event-holder p-3">
+                                            <div class="event-image">
+                                                행사
+                                            </div>
+                                        </div>
+                                        <div class="col-4 event-holder p-3">
+                                            <div class="event-image">
+                                                행사
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 event-holder p-3">
+                                            <div class="event-image">
+                                                행사
+                                            </div>
+                                        </div>
+                                        <div class="col-4 event-holder p-3">
+                                            <div class="event-image">
+                                                행사
+                                            </div>
+                                        </div>
+                                        <div class="col-4 event-holder p-3">
+                                            <div class="event-image">
+                                                행사
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 event-holder p-3">
+                                            <div class="event-image">
+                                                행사
+                                            </div>
+                                        </div>
+                                        <div class="col-4 event-holder p-3">
+                                            <div class="event-image">
+                                                행사
+                                            </div>
+                                        </div>
+                                        <div class="col-4 event-holder p-3">
+                                            <div class="event-image">
+                                                행사
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 ">
+                    <div class="main">
+                        <div class="main-banner">
+                            <div class="banner-wrapper">
+                                <span>MAIN BANNER!!!</span>
+                            </div>
+                        </div>
+                        <div class="menu">
+                            <nav class='container'>
+                                <div class="nav nav-tabs row" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active col text-center" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">연극</a>
+                                    <a class="nav-item nav-link col text-center" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">전시</a>
+                                    <a class="nav-item nav-link col text-center" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">음악</a>
+                                    <a class="nav-item nav-link col text-center" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">운동</a>
+                                    <a class="nav-item nav-link col text-center" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">기타</a>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="main-content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="main-content-holder p-2">
+                                            <div class="main-content-item">
+                                                ITEM
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <!--사이드바-->
-        <!--풋터-->
-        <footer class="brw3foot">
-            <div class="brw3foot2"></div>
-            <div class="brw3foot2"></div>
-            <div class="brw3foot2"></div>
-            <div class="brw3foot2"></div>
-            <div class="brw3foot2"></div>
-            <div class="brw3foot2"></div>
-            <div class="brw3foot2"></div>
-        </footer>
+        </div>
     </div>
+
+    <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay : true,
+        pagination: {
+        el: '.banner-pagination-bullets',
+        },
+
+        navigation: {
+        nextEl: '.banner-btn-right',
+        prevEl: '.banner-btn-left',
+        },
+    })
+    </script>
 </body>
 </html>
-
-
-출처: https://mainia.tistory.com/4210 [녹두장군 - 상상을 현실로]
